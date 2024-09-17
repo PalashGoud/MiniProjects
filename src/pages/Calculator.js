@@ -52,6 +52,7 @@ function Calculator() {
         </div>
         <div className='lastline-calculator'></div>
       </div>
+      <div className='absolute bottom-0 text-white '>Made with ❤️ By Palash</div>
     </div>
   )
 }

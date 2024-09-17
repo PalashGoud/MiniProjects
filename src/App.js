@@ -5,7 +5,7 @@ import Calculator from './pages/Calculator'
 import CalculatorNew from './pages/CalculatorNew'
 import TicTacToe from './pages/TicTacToe'
 import Crousal from './pages/Crousal'
-import Practice from './pages/Practice'
+import RockPaper from './pages/RockPaper'
 import Snakenladder from './pages/Snakenladder'
 import Clock from './pages/Clock'
 import Todo from './pages/Todo'
@@ -21,7 +21,7 @@ function App() {
       <Route path='/newcalci' element={<CalculatorNew/>}></Route>
       <Route path='/tic-tac-toe' element={<TicTacToe/>} > </Route> 
       <Route path='/crousal'element={<Crousal/>} ></Route>   
-      <Route path='/practice'element={<Practice/>} ></Route> 
+      <Route path='/rockpaper'element={<RockPaper/>} ></Route> 
       <Route path='/snakenladder' element={<Snakenladder/>}></Route>
       <Route path='/clock' element={<Clock/>}></Route>
       <Route path='/todo' element={<Todo/>}></Route>

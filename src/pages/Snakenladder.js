@@ -53,8 +53,8 @@ turn:{turn}
 
 
 
-
-     <div className='flex bg-cover flex-wrap h-[500px] w-[600px] bg-[url(https://media.licdn.com/dms/image/C4D12AQFPcUrsF97dTw/article-cover_image-shrink_600_2000/0/1543747519723?e=2147483647&v=beta&t=-12hmqMWefu4vwmnTJxLrgchhwBwqX4oUpUleOzVD0E)]'>
+     
+     <div className='flex bg-cover  flex-wrap h-[500px] w-[600px] bg-[url(https://media.licdn.com/dms/image/C4D12AQFPcUrsF97dTw/article-cover_image-shrink_600_2000/0/1543747519723?e=2147483647&v=beta&t=-12hmqMWefu4vwmnTJxLrgchhwBwqX4oUpUleOzVD0E)]'>
 
      <button className={p1==25 && p2==25 ? "dono": p1==25 ? "goti-1" :p2==25 ? "goti-2":"blank"}></button>
      <button className={p1==26 && p2==26 ? "dono": p1==26 ? "goti-1" :p2==26 ? "goti-2":"blank"}></button>
@@ -92,6 +92,7 @@ turn:{turn}
     
      <button onClick={()=>throwDice()} className='blank-1'> Roll The dice <div>{dice}</div></button>
      
+     <div className='absolute bottom-0 text-black '>Made with ❤️ By Palash</div>
      </div>
   )
 }

@@ -59,8 +59,8 @@ function CalculatorNew() {
           <i class="fa fa-square" aria-hidden="true"></i>
 
         </div>
-
       </div>
+      <div className='absolute bottom-0 text-black '>Made with ❤️ By Palash</div>
     </div>
   )
 }

@@ -5,10 +5,10 @@ function Todo() {
     useEffect(()=>{
         getData()
     }, [])
-    const [todoObj, setTodoObj] = useState({})
+    const [todoObj, setTodoObj] = useState("")
     const postData =()=>{
         axios.post("http://localhost:5001/api/todo", todoObj).then(
-            (res)=>{console.log(res); getData()},
+            (res)=>{console.log(res); setTodoObj({title:"", description:""}); getData()},
             (err)=>{console.log(err)}
         )
     }
@@ -21,26 +21,26 @@ function Todo() {
     }
   return (
     <div>
-        {JSON.stringify(todoList)}
+        {/* {JSON.stringify(todoList)} */}
         <div className='flex gap-20'>
-            <input onChange={(e)=> setTodoObj({...todoObj ,title: e.target.value})} placeholder='title'></input>
-            <input onChange={(e)=> setTodoObj({...todoObj ,description: e.target.value})} placeholder='description'></input>
+            <input value={todoObj.title} onChange={(e)=> setTodoObj({...todoObj ,title: e.target.value})} placeholder='title'></input>
+            <input value={todoObj.description} onChange={(e)=> setTodoObj({...todoObj ,description: e.target.value})} placeholder='description'></input>
             <button onClick={()=>postData()}>Submit</button>
         </div>
         <table>
             <thead>
-                <th>
-                    <td>S no</td>
-                    <td>Title</td>
-                    <td>Description</td>
-                </th>
+                
+                    <th className='border'>S no</th>
+                    <th className='border'>Title</th>
+                    <th className='border'>Description</th>
+                
             </thead>
             <tbody>
                 {todoList.map((i, index)=>
                 <tr>
-                    <td>{index+1}.</td>
-                    <td>{i.title}</td>
-                    <td>{i.description}</td>
+                    <td className='border px-4'>{index+1}.</td>
+                    <td className='border px-4'>{i.title}</td>
+                    <td className='border px-4'>{i.description}</td>
                 </tr>)}
             </tbody>
         </table>

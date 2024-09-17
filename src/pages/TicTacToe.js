@@ -156,6 +156,8 @@ function TicTacToe() {
             </div>  
             <div className='tt-l'> Player 1 = X </div>
             <div className='tt-l1'> Player 2 = O </div>
+
+            <div className='absolute bottom-0 text-black '>Made with ❤️ By Palash</div>
         </div>
     )
 }
