@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function Home() {
   const navigate = useNavigate()
   return (
-    <div className='flex flex-wrap w-[100%] bg-[#191916] '>
+     <div className='flex flex-wrap w-[100%] bg-[#191916] '>
      <div className='flex items-center justify-center h-[45vh] w-[100%]'>
       <img className='h-[120%] w-[70%]' src={`../images/Home.png`}></img>
     
