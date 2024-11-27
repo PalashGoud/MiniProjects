@@ -152,9 +152,11 @@ function TicTacToe() {
                 <div style={{height : a2=="X" && a5 =="X" && a8 =="X" || a2=="O" && a5=="O" && a8=="O" ? "100%" : "0" }} className=' bg-red-500 h-[100%]  w-1 duration-300 absolute left-[152px]'></div>   
                 <div style={{height : a3=="X" && a6 =="X" && a9 =="X" || a3=="O" && a6=="O" && a9=="O" ? "100%" : "0" }} className= 'bg-red-500 h-[100%]  w-1 duration-300 absolute right-[49px]'></div>  
                 <div style={{width : a3=="X" && a5 =="X" && a7 =="X" || a3=="O" && a5=="O" && a7=="O" ? "3px" : "0" }} className= 'bg-red-500 h-[140%]  w-1 duration-300 rotate-45 absolute  left-[153px] top-[-62px]'></div>    
-                <div style={{width : a1=="X" && a5 =="X" && a9 =="X" || a1=="O" && a5=="O" && a9=="O" ? "3px" : "0" }} className= 'bg-red-500 h-[140%]  w-1 duration-300 -rotate-45 absolute  left-[153px] top-[-62px]'></div>                            
+                <div style={{width : a1=="X" && a5 =="X" && a9 =="X" || a1=="O" && a5=="O" && a9=="O" ? "3px" : "0" }} className= 'bg-red-500 h-[140%]  w-1 duration-300 -rotate-45 absolute  left-[153px] top-[-62px]'></div>      
+                                     
             </div>  
             <div className='tt-l'> Player 1 = X </div>
+            <button onClick={()=> window.location.reload()} className='bg-purple-950 rounded-lg h-[6vh] w-[10vh]  text-[18px] absolute bottom-[15vh] text-white '>RESET</button> 
             <div className='tt-l1'> Player 2 = O </div>
 
             <div className='absolute bottom-0 text-black '>Made with ❤️ By Palash</div>
