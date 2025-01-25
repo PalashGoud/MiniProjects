@@ -11,6 +11,7 @@ function TicTacToe() {
     const [a8, setA8] = useState("")
     const [a9, setA9] = useState("")
     const [turn, setTurn] = useState("1")
+    
     const block1Fn = () => {
         if (turn == 1 && a1 == "") {
             setA1("X")

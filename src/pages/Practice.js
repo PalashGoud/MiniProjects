@@ -1,12 +1,8 @@
-import React, { useContext } from 'react'
-import { MyData } from './Context1'
+import React from 'react'
 
 function Practice() {
-  const {name, click, setClick} = useContext(MyData)
   return (
-    <div>
-      <button onClick={()=> setClick(click+1)}>{click}</button>
-    </div>
+    <div>Practice</div>
   )
 }
 

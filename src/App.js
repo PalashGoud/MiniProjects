@@ -11,7 +11,8 @@ import Clock from './pages/Clock'
 import Todo from './pages/Todo'
 import Practice from './pages/Practice'
 import Context1 from './pages/Context1'
-import List from './pages/List'
+import Mines from './pages/Mines'
+import PracticeTodo from './pages/PracticeTodo'
 
 
 
@@ -29,10 +30,10 @@ function App() {
       <Route path='/rockpaper'element={<RockPaper/>} ></Route> 
       <Route path='/snakenladder' element={<Snakenladder/>}></Route>
       <Route path='/clock' element={<Clock/>}></Route>
-
       <Route path='/todo' element={<Todo/>}></Route>
       <Route path='/practice' element={<Practice/>}></Route>
-      <Route path='/list' element={<List/>}></Route>
+      <Route path='/practicetodo' element={<PracticeTodo/>}></Route>
+      <Route path='/mines' element={<Mines/>}></Route>
       
         </Routes>
     </BrowserRouter>

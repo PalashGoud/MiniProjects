@@ -627,3 +627,52 @@ box-shadow: 0px 0px 20px 20px rgba(0, 224, 255, 0.2);
   }
   
 
+/* -----------------------------------------mines------------------------------ */
+
+
+/* Shrinking overlay animation */
+.check {
+  animation: shrink 0.3s linear forwards;
+}
+
+/* Scaling animation for bomb */
+.bomb {
+  transform: scale(0);
+  animation: explode 0.3s 0.3s linear forwards;
+}
+
+/* Scaling animation for tick */
+.tick {
+  transform: scale(0);
+  animation: appear 0.3s 0.3s linear forwards;
+}
+
+/* Shrink animation */
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* Bomb explosion animation */
+@keyframes explode {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Tick appear animation */
+@keyframes appear {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
