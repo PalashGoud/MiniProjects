@@ -4,7 +4,7 @@ function Crousal() {
     const [move, setMove] = useState(0)
 
     return (
-        <div className='overflow-hidden w-[100%] h-[100vh]'>
+        <div className='cursor-pointer overflow-hidden w-[100%] h-[100vh]'>
             <div style={{ transform: `translateX(-${move}%)` }} className='w-[400%] h-[100vh] flex object-cover overflow-hidden duration-500 '>
                 <img className='w-[100%]' src='https://images.unsplash.com/photo-1611078489935-0cb964de46d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww'></img>
                 <img className='w-[100%]' src='https://images.unsplash.com/photo-1663970206537-2d24183b59c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2FsbHBhcGVyJTIwZm9yJTIwcGN8ZW58MHx8MHx8fDA%3D'></img>

@@ -12,7 +12,8 @@ import Todo from './pages/Todo'
 import Practice from './pages/Practice'
 import Context1 from './pages/Context1'
 import Mines from './pages/Mines'
-import PracticeTodo from './pages/PracticeTodo'
+import Guess from './pages/Guess'
+
 
 
 
@@ -32,8 +33,8 @@ function App() {
       <Route path='/clock' element={<Clock/>}></Route>
       <Route path='/todo' element={<Todo/>}></Route>
       <Route path='/practice' element={<Practice/>}></Route>
-      <Route path='/practicetodo' element={<PracticeTodo/>}></Route>
       <Route path='/mines' element={<Mines/>}></Route>
+      <Route path='/number-guess' element={<Guess/>}></Route>
       
         </Routes>
     </BrowserRouter>

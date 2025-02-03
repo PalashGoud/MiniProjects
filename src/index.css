@@ -579,44 +579,46 @@ body {
 
 /* -------------------------------------Snack&ladder---------------------------------------- */
 
-.blank{
- 
+.blank {
   height: 100px;
   width: 100px;
   box-sizing: border-box;
- 
 }
-.blank-1{
+.blank-1 {
   border: 1px solid black;
   height: 100px;
   width: 100px;
   border-radius: 50%;
   box-sizing: border-box;
 }
-.goti-1{
+.goti-1 {
   border: 1px solid black;
   height: 100px;
   width: 100px;
   box-sizing: border-box;
   border-radius: 50%;
-  background: red;
+  background-image: url('./images/blackgoti.jpeg');
+  background-size: cover;
+  background-position: center;
 }
-.goti-2{
+.goti-2 {
   border: 1px solid black;
   height: 100px;
   width: 100px;
   box-sizing: border-box;
-  background-color: blue;
-  border-radius: 50%;
+  background-image: url('./images/whitegoti.jpeg');
+  background-size: cover;
+  background-position: center;
 }
-.dono{
-  border: 20px solid red;
+.dono {
+  
   height: 100px;
   width: 100px;
   box-sizing: border-box;
-  background-color: blue;
+  background-image: url('./images/donogoti.jpeg');
   border-radius: 50%;
 }
+
 
 /* --------------------------------------------------------clock------------------------------ */
 .clock{
@@ -676,3 +678,6 @@ box-shadow: 0px 0px 20px 20px rgba(0, 224, 255, 0.2);
     transform: scale(1);
   }
 }
+
+
+
